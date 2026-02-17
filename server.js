@@ -127,7 +127,7 @@ sincronizarBd()
  
 
 //variables de entorno
-const PORT =process.env|| 4001
+const PORT =process.env.PORT|| 4001
 
  const app= express();
  const puerto='4001';
@@ -165,7 +165,7 @@ const PORT =process.env|| 4001
   
 
 //iniciar elservidor
-app.listen(puerto,()=>{
+app.listen(PORT, '0.0.0.0',()=>{
 console.log('servidor corriendo en http://localHost:{puerto}',puerto);
 
 
