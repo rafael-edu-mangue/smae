@@ -4,18 +4,18 @@ import {Sequelize} from 'sequelize';
 import express, { Router } from 'express'
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import sequelize from './configuracion-basedatos/configuracion.js';
-import usuario from './modelos/usuario.js'
-import curso from './modelos/curso.js';
-import perfil from './modelos/perfil.js';
-import instructor from './modelos/instructor.js';
-import detallesCurso from './modelos/detallesCurso.js';
-import inscripcion from './modelos/inscripcion.js'
+import sequelize from '../configuracion-basedatos/configuracion.js';
+import usuario from '../modelos/usuario.js'
+import curso from '../modelos/curso.js';
+import perfil from '../modelos/perfil.js';
+import instructor from '../modelos/instructor.js';
+import detallesCurso from '../modelos/detallesCurso.js';
+import inscripcion from '../modelos/inscripcion.js'
 //import rutasSmae from './rutas/rutasSmae.js'
-import router from './rutas/rutasSmae.js';
+import router from '../rutas/rutasSmae.js';
 import dotenv from 'dotenv'
-import Usuario from './modelos/usuario.js';
-import modulosCurso from './modelos/modulosCurso.js';
+import Usuario from '../modelos/usuario.js';
+import modulosCurso from '../modelos/modulosCurso.js';
 
 //variables env
 dotenv.config();
